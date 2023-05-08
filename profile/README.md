@@ -1,12 +1,10 @@
-### Hello and welcome to CloudOn Github Organization! 
-
-Hi there!
+### Hello and welcome to CloudOn! 
 
 My name is Yar Naumenko. I am Cloud, IaC and Infrastructure Consultant.
 [My LinkedIn profile](https://www.linkedin.com/in/ynaumenko).
 
 Since May 2020 I have delivered >20 different cloud migration and cloud-native projects. 
-Below you can find links to code examples, network and VPC diagrams for released projects. 
+Below you can find links to code examples, network and VPC diagrams for some of released projects. 
 Enjoy!
 
 [Nightly AWS Cleaner](https://github.com/cloudon-one/aws-cleaner) - automated service to terminate/suspend idle and un-used AWS resources according to flexible rules and policies
