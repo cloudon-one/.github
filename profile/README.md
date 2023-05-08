@@ -7,7 +7,7 @@ Since May 2020 I have delivered >20 different cloud migration and cloud-native p
 Below you can find links to code examples, network and VPC diagrams for some of released projects. 
 Enjoy!
 
-[Nightly AWS Cleaner](https://github.com/cloudon-one/aws-cleaner) - automated service to terminate/suspend idle and un-used AWS resources according to flexible rules and policies
+[Nightly AWS Cleaner](https://github.com/cloudon-one/aws-cleaner) - automated service to terminate/suspend idle and un-used AWS resources according to flexible rules.
 ![aws cleaner hld](https://github.com/cloudon-one/aws-cleaner/blob/main/image_original.jpeg)
 
 [GCP FinOps Recommender](https://github.com/cloudon-one/gcp-finops-recommender) - automated service to collect GCP Recommendations API recommenadations on cloud costs saving dedicated projects, folders and organizations.
