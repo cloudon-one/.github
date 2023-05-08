@@ -1,7 +1,7 @@
 ### Hello and welcome to CloudOn! 
 
 My name is Yar Naumenko. I am Cloud, IaC and Infrastructure Consultant.
-[My LinkedIn profile](https://www.linkedin.com/in/ynaumenko).
+[Check out my LinkedIn profile](https://www.linkedin.com/in/ynaumenko).
 
 Since May 2020 I have delivered >20 different cloud migration and cloud-native projects. 
 Below you can find links to code examples, network and VPC diagrams for some of released projects. 
