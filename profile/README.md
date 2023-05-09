@@ -7,6 +7,10 @@ Since May 2020 I have delivered >20 different cloud migration and cloud-native p
 Below you can find links to code examples, network and VPC diagrams for some of released projects. 
 Enjoy!
 
+[Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - IaC (terraform) version of multi-tenant, scalable and isolated GCP Cloud Landing Zone.
+
+[GCP terraform resources](https://github.com/cloudon-one/gcp-terraform-resources) - list of ready to use terraform resources 
+
 [Nightly AWS Cleaner](https://github.com/cloudon-one/aws-cleaner) - automated service to terminate/suspend idle and un-used AWS resources according to flexible rules.
 ![aws cleaner hld](https://github.com/cloudon-one/aws-cleaner/blob/main/image_original.jpeg)
 
@@ -19,6 +23,4 @@ Enjoy!
 [Terragrunt GCP Landing Zone](https://github.com/cloudon-one/gcp-terragrunt-lz) - IaC (terragrunt, terraform and yaml) version of enterprise grade, PCI/DSS compliant GCP LZ template. 
 ![gcp-tg-lz](https://github.com/cloudon-one/gcp-terragrunt-lz/blob/main/hld.jpeg)
 
-[Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - IaC (terraform) version of multi-tenant, scalable and isolated GCP Cloud Landing Zone.
 
-[GCP terraform resources](https://github.com/cloudon-one/gcp-terraform-resources) - list of ready to use terraform resources 
