@@ -7,7 +7,7 @@ Since May 2020 I have delivered >20 different cloud migration and cloud-native p
 Below you can find links to code examples, network and VPC diagrams for some of released projects. 
 Enjoy!
 
-[Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - IaC (terraform) version of multi-tenant, scalable and isolated GCP Cloud Landing Zone.
+[Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - popular Cloud DevOps services ready to use configuration.
 
 [GCP terraform resources](https://github.com/cloudon-one/gcp-terraform-resources) - list of ready to use terraform resources 
 
