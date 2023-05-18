@@ -7,6 +7,8 @@ Since May 2020 I have delivered >20 different cloud migration and cloud-native p
 Below you can find links to code examples, network and VPC diagrams for some of released projects. 
 Enjoy!
 
+[DevSecOps Best Practices and resources](https://github.com/cloudon-one/DevSecOps) - list of DevSecOps best practices
+
 [Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - popular Cloud DevOps services ready to use configuration.
 
 [Jenkins X on GKE Template](https://github.com/cloudon-one/jx-cicd) - templated Jenkins X CI/CD configuration
