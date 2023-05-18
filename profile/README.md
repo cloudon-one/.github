@@ -8,13 +8,9 @@ Below you can find links to code examples, network and VPC diagrams for some of 
 Enjoy!
 
 [Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - popular Cloud DevOps services ready to use configuration.
-
 [Jenkins X on GKE Template](https://github.com/cloudon-one/jx-cicd) - templated Jenkins X CI/CD configuration
-
 [GCP terraform resources](https://github.com/cloudon-one/gcp-terraform-resources) - list of ready to use GCP terraform resources 
-
 [AWS terraform resources](https://github.com/cloudon-one/aws-tf-modules) - list of ready to use AWS terraform resources 
-
 [Nightly AWS Cleaner](https://github.com/cloudon-one/aws-cleaner) - automated service to terminate/suspend idle and un-used AWS resources according to flexible rules.
 ![aws cleaner hld](https://github.com/cloudon-one/aws-cleaner/blob/main/image_original.jpeg)
 
