@@ -11,6 +11,8 @@ Enjoy!
 
 [Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - popular Cloud DevOps services ready to use configuration.
 
+[HCP Vault on GCP and AWS terrafrom template](https://github.com/cloudon-one/vault) - HCP Vault terraform template.
+
 [Jenkins X on GKE Template](https://github.com/cloudon-one/jx-cicd) - templated Jenkins X CI/CD configuration
 
 [GCP terraform resources](https://github.com/cloudon-one/gcp-terraform-resources) - list of ready to use GCP terraform resources 
