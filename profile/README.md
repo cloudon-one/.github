@@ -1,10 +1,10 @@
-### Hello and welcome to CloudOn! 
+### Hello and welcome,
 
-My name is Yar Naumenko. I am Cloud, IaC and Infrastructure Consultant.
+I'm Yar Naumenko - Cloud Engineer and Infrastructure Consultant.
 [Check out my LinkedIn profile](https://www.linkedin.com/in/ynaumenko).
 
-Since May 2020 I have delivered >20 different cloud migration and cloud-native projects. 
-Below you can find links to code examples, network and VPC diagrams for some of released projects. 
+Since May 2020 I was engaged as Cloud Engineer/Architect to >20 different cloud migration and cloud-native projects. 
+Below you can find links to code examples and diagrams to some of released projects. 
 Enjoy!
 
 [DevSecOps Best Practices and resources](https://github.com/cloudon-one/DevSecOps) - list of DevSecOps best practices
@@ -28,7 +28,7 @@ Enjoy!
 [Snippet](https://github.com/cloudon-one/snippet) - IaC (terraform) version of multi-tenant, scalable and isolated GCP Cloud Landing Zone.
 ![gcp snippet](https://github.com/cloudon-one/snippet/blob/main/GCP%20HLD%20-%20SNIPPET-GCP.png)
 
-[Terragrunt GCP Landing Zone](https://github.com/cloudon-one/gcp-terragrunt-lz) - IaC (terragrunt, terraform and yaml) version of enterprise grade, PCI/DSS compliant GCP LZ template. 
+[Terragrunt GCP multi-env Landing Zone](https://github.com/cloudon-one/gcp-terragrunt-lz) - IaC (terragrunt, terraform and yaml) version of enterprise grade, PCI/DSS compliant GCP LZ template. 
 ![gcp-tg-lz](https://github.com/cloudon-one/gcp-terragrunt-lz/blob/main/hld.jpeg)
 
 
