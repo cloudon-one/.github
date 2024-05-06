@@ -1,6 +1,6 @@
 ### Hello and welcome,
 
-I'm Yar Naumenko - Cloud Engineer and Infrastructure Consultant.
+I'm Yaar Naumenko - Cloud Engineer and Infra, ML/AA Consultant.
 [Check out my LinkedIn profile](https://www.linkedin.com/in/ynaumenko).
 
 Since May 2020 I was engaged as Cloud Engineer/Architect to >20 different cloud migration and cloud-native projects. 
