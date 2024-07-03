@@ -7,6 +7,8 @@ Since May 2020, I have been engaged as a Cloud Engineer/Architect on more> than 
 Below are links to code examples and diagrams of some of the released projects. 
 Enjoy!
 
+[OpenAI applications samples -  API, AI assistant and vision](https://github.com/cloudon-one/genai) - list of OpenAI sample apps 
+
 [DevSecOps Best Practices and resources](https://github.com/cloudon-one/DevSecOps) - list of DevSecOps best practices
 
 [Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - popular Cloud DevOps services ready to use configuration.
