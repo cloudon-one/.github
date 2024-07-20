@@ -11,7 +11,7 @@ Enjoy!
 
 [DevSecOps Best Practices and resources](https://github.com/cloudon-one/DevSecOps) - list of DevSecOps best practices
 
-[List of selected k8s resources](https://github.com/cloudon-one/k8s-resources)) - list of kubernates resources and articles
+[List of selected k8s resources](https://github.com/cloudon-one/k8s-resources) - list of kubernates resources and articles
 
 [Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - popular Cloud DevOps services ready to use configuration.
 
