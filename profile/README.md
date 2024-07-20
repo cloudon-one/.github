@@ -4,12 +4,14 @@ I'm Yaar Naumenko - Cloud Infra, Data and AI Engineer.
 [Check out my LinkedIn profile](https://www.linkedin.com/in/ynaumenko).
 
 Since May 2020, I have been engaged as a Cloud Engineer/Architect on more> than 20 different cloud migration and cloud-native projects. 
-Below are links to code examples and diagrams of some of the released projects. 
+Below are links to code examples and diagrams of some of the projects that have been released. 
 Enjoy!
 
 [OpenAI applications samples -  API, AI assistant and vision](https://github.com/cloudon-one/genai) - list of OpenAI sample apps 
 
 [DevSecOps Best Practices and resources](https://github.com/cloudon-one/DevSecOps) - list of DevSecOps best practices
+
+[List of selected k8s resources](https://github.com/cloudon-one/k8s-resources)) - list of kubernates resources and articles
 
 [Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) - popular Cloud DevOps services ready to use configuration.
 
