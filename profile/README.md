@@ -1,9 +1,7 @@
 ### Hello and welcome,
 
-I'm Yaar Naumenko - Cloud Infra, Data and AI Engineer.
-[Check out my LinkedIn profile](https://www.linkedin.com/in/ynaumenko).
+I'm Yaar Naumenko - Cloud Infra and Data Engineer.
 
-Since May 2020, I have been engaged as a Cloud Engineer/Architect on more> than 20 different cloud migration and cloud-native projects. 
 Below are links to code examples and diagrams of some of the projects that have been released. 
 Enjoy!
 
