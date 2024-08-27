@@ -30,7 +30,4 @@ Enjoy!
 [Snippet](https://github.com/cloudon-one/snippet) - IaC (terraform) version of multi-tenant, scalable and isolated GCP Cloud Landing Zone.
 ![gcp snippet](https://github.com/cloudon-one/snippet/blob/main/GCP%20HLD%20-%20SNIPPET-GCP.png)
 
-[Terragrunt GCP multi-env Landing Zone](https://github.com/cloudon-one/gcp-terragrunt-lz) - IaC (terragrunt, terraform and yaml) version of enterprise-grade, PCI/DSS compliant GCP LZ template. 
-![gcp-tg-lz](https://github.com/cloudon-one/gcp-terragrunt-lz/blob/main/hld.jpeg)
-
 
