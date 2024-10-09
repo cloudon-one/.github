@@ -5,7 +5,7 @@ I'm Yaar Naumenko - Cloud Infra and Data Engineer.
 Below are links to code examples and diagrams of some of the projects that have been released. 
 Enjoy!
 
-[AWS Multi-Account Landing Zone with Terragrunt and Terraform -  API, AI assistant and vision](https://github.com/cloudon-one/genai) - Example of complex AWS Landing Zone
+[AWS Multi-Account Landing Zone with Terragrunt and Terraform](https://github.com/cloudon-one/aws-terragrunt-configuration) - Example of complex AWS Landing Zone
 ![aws-terragrunt-lz](https://github.com/cloudon-one/aws-terragrunt-configuration/blob/main/aws/aws-landing-zone.png)
 
 [OpenAI applications samples -  API, AI assistant and vision](https://github.com/cloudon-one/genai) - list of OpenAI sample apps 
