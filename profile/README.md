@@ -24,6 +24,7 @@ Please look at the code examples and diagrams of some projects released below.
 [AWS terraform resources](https://github.com/cloudon-one/aws-tf-modules) 
 
 [Nightly AWS Cleaner](https://github.com/cloudon-one/aws-cleaner)
+
 ![aws cleaner hld](https://github.com/cloudon-one/aws-cleaner/blob/main/image_original.jpeg)
 
 [GCP FinOps Recommender](https://github.com/cloudon-one/gcp-finops-recommender)
