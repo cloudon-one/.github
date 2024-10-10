@@ -1,9 +1,8 @@
 ### Hello and welcome,
 
-I'm Yaar Naumenko - Cloud Infra and Data Engineer.
+I'm Yaar Naumenko - Cloud Infra Engineer and Solutions Architect.
 
-Below are links to code examples and diagrams of some of the projects that have been released. 
-Enjoy!
+Please look at the code examples and diagrams of some projects released below. 
 
 [AWS Multi-Account Landing Zone with Terragrunt and Terraform](https://github.com/cloudon-one/aws-terragrunt-configuration) - Example of complex AWS Landing Zone
 ![aws-terragrunt-lz](https://github.com/cloudon-one/aws-terragrunt-configuration/blob/main/aws/aws-landing-zone.png)
