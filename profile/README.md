@@ -55,7 +55,7 @@ flowchart TD
 ```
 
 
-[Kubernates (EKS) ready to use Terraform modules](https://github.com/cloudon-one/k8s-platform-modules)
+[k8s platform modules](https://github.com/cloudon-one/k8s-platform-modules)
 ```mermaid
 graph TB
     subgraph Core["Core Infrastructure"]
