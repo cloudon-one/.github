@@ -4,6 +4,85 @@ I'm Yaar Naumenko - Cloud Infra Engineer and Solutions Architect.
 
 Please look at the code examples and diagrams of some projects released below. 
 
+[Pre-commit checks pipeline](https://github.com/cloudon-one/pre-commits-pipelines)
+```mermaid
+flowchart TB
+    subgraph trigger["Trigger Events"]
+        PR["Pull Request"]
+        Push["Push to main/master"]
+    end
+
+    subgraph jobs["Pipeline Jobs"]
+        subgraph security["Security Scanning"]
+            checkout1["Checkout Code"]
+            gitleaks["Gitleaks Scan"]
+        end
+
+        subgraph tfsec["TFSec Analysis"]
+            checkout2["Checkout Code"]
+            tfscan["TFSec Scan"]
+            report["Generate JSON Report"]
+        end
+
+        subgraph infra["Infrastructure Validation"]
+            checkout3["Checkout Code"]
+            docker["Build Docker Image"]
+            
+            subgraph checks["Parallel Checks"]
+                precommit["Pre-commit Checks"]
+                tflint["TFLint Validation"]
+                terraform["Terraform Checks"]
+            end
+            
+            subgraph tf["Terraform Checks"]
+                init["Terraform Init"]
+                validate["Terraform Validate"]
+                providers["Check Required Providers"]
+            end
+        end
+    end
+
+    subgraph results["Results Processing"]
+        status["Check Workflow Status"]
+        report_status["Report Results"]
+    end
+
+    %% Connections
+    PR --> security & tfsec & infra
+    Push --> security & tfsec & infra
+    
+    %% Security flow
+    checkout1 --> gitleaks
+    
+    %% TFSec flow
+    checkout2 --> tfscan
+    tfscan --> report
+    
+    %% Infra flow
+    checkout3 --> docker
+    docker --> checks
+    checks --> tf
+    init --> validate --> providers
+    
+    %% Results flow
+    tf --> status
+    checks --> status
+    status --> report_status
+
+    %% Styling
+    classDef trigger fill:#f9f,stroke:#333,stroke-width:2px
+    classDef security fill:#bbf,stroke:#333
+    classDef tfsec fill:#bfb,stroke:#333
+    classDef infra fill:#fbf,stroke:#333
+    classDef results fill:#ff9,stroke:#333
+    
+    class PR,Push trigger
+    class security,gitleaks,checkout1 security
+    class tfsec,tfscan,report,checkout2 tfsec
+    class infra,docker,checks,tf,checkout3 infra
+    class status,report_status results
+```
+
 [Kubernates (EKS) Essential Platform Tools - scalable and preconfigured Terragrunt configuration](https://github.com/cloudon-one/k8s-platform-tools)
 ```mermaid
 flowchart TD
