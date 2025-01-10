@@ -1,221 +1,98 @@
-### Hello and welcome,
+# Cloudon - Enterprise Cloud Infrastructure Solutions
 
-I'm Yaar Naumenko - Cloud Infra Engineer and Solutions Architect.
+Welcome to Cloudon's technology hub. We specialize in delivering enterprise-grade cloud solutions that empower organizations to innovate and scale efficiently. Below you'll find our comprehensive portfolio of production-ready implementations and tools.
 
-Please look at the code examples and diagrams of some projects released below. 
+## Core Solutions
 
-[Pre-commit checks pipeline](https://github.com/cloudon-one/pre-commits-pipelines)
-```mermaid
-flowchart TB
-    subgraph trigger["Trigger Events"]
-        PR["Pull Request"]
-        Push["Push to main/master"]
-    end
+### Pre-commit Checks Pipeline
+A robust CI/CD pipeline ensuring code quality and security through automated validation.
+- **Repository**: [cloudon-one/pre-commits-pipelines](https://github.com/cloudon-one/pre-commits-pipelines)
+- **Key Features**:
+  - Automated security scanning with Gitleaks
+  - Infrastructure validation using TFSec
+  - Comprehensive Terraform checks
+  - Docker-based execution environment
 
-    subgraph jobs["Pipeline Jobs"]
-        subgraph security["Security Scanning"]
-            checkout1["Checkout Code"]
-            gitleaks["Gitleaks Scan"]
-        end
+### Kubernetes Platform Solutions
 
-        subgraph tfsec["TFSec Analysis"]
-            checkout2["Checkout Code"]
-            tfscan["TFSec Scan"]
-            report["Generate JSON Report"]
-        end
+#### Essential Platform Tools
+Production-ready EKS configuration with integrated observability and security components.
+- **Repository**: [cloudon-one/k8s-platform-tools](https://github.com/cloudon-one/k8s-platform-tools)
+- **Features**:
+  - Scalable Terragrunt configuration
+  - Integrated service mesh with Istio
+  - Advanced observability stack
+  - Automated certificate management
 
-        subgraph infra["Infrastructure Validation"]
-            checkout3["Checkout Code"]
-            docker["Build Docker Image"]
-            
-            subgraph checks["Parallel Checks"]
-                precommit["Pre-commit Checks"]
-                tflint["TFLint Validation"]
-                terraform["Terraform Checks"]
-            end
-            
-            subgraph tf["Terraform Checks"]
-                init["Terraform Init"]
-                validate["Terraform Validate"]
-                providers["Check Required Providers"]
-            end
-        end
-    end
+#### Platform Modules
+Modular components for building enterprise Kubernetes environments.
+- **Repository**: [cloudon-one/k8s-platform-modules](https://github.com/cloudon-one/k8s-platform-modules)
+- **Components**:
+  - Karpenter for node management
+  - Kong API Gateway integration
+  - Comprehensive observability stack
+  - GitOps with ArgoCD
 
-    subgraph results["Results Processing"]
-        status["Check Workflow Status"]
-        report_status["Report Results"]
-    end
+## Enterprise Cloud Foundations
 
-    %% Connections
-    PR --> security & tfsec & infra
-    Push --> security & tfsec & infra
-    
-    %% Security flow
-    checkout1 --> gitleaks
-    
-    %% TFSec flow
-    checkout2 --> tfscan
-    tfscan --> report
-    
-    %% Infra flow
-    checkout3 --> docker
-    docker --> checks
-    checks --> tf
-    init --> validate --> providers
-    
-    %% Results flow
-    tf --> status
-    checks --> status
-    status --> report_status
+### AWS Landing Zone
+Multi-account AWS organization structure using Terragrunt.
+- **Repository**: [cloudon-one/aws-terragrunt-configuration](https://github.com/cloudon-one/aws-terragrunt-configuration)
+- **Documentation**: [Architecture Overview](https://github.com/cloudon-one/aws-terragrunt-configuration/blob/main/aws/aws-landing-zone.png)
 
-    %% Styling
-    classDef trigger fill:#f9f,stroke:#333,stroke-width:2px
-    classDef security fill:#bbf,stroke:#333
-    classDef tfsec fill:#bfb,stroke:#333
-    classDef infra fill:#fbf,stroke:#333
-    classDef results fill:#ff9,stroke:#333
-    
-    class PR,Push trigger
-    class security,gitleaks,checkout1 security
-    class tfsec,tfscan,report,checkout2 tfsec
-    class infra,docker,checks,tf,checkout3 infra
-    class status,report_status results
-```
+### GCP Landing Zone
+Multi-tenant GCP infrastructure foundation.
+- **Repository**: [cloudon-one/snippet](https://github.com/cloudon-one/snippet)
+- **Architecture**: [GCP HLD](https://github.com/cloudon-one/snippet/blob/main/GCP%20HLD%20-%20SNIPPET-GCP.png)
 
-[Kubernates (EKS) Essential Platform Tools - scalable and preconfigured Terragrunt configuration](https://github.com/cloudon-one/k8s-platform-tools)
-```mermaid
-flowchart TD
-    subgraph "Infrastructure Layer"
-        EKS[EKS Cluster]
-        VPC[VPC]
-        IAM[IAM Roles/Policies]
-    end
+## FinOps Solutions
 
-    subgraph "Service Mesh & Networking"
-        ISTIO[Istio Service Mesh]
-        KONG[Kong Ingress]
-        DNS[External DNS]
-    end
+### AWS Resource Optimizer
+Automated cost optimization for AWS environments.
+- **Repository**: [cloudon-one/aws-cleaner](https://github.com/cloudon-one/aws-cleaner)
+- **Documentation**: [High-Level Design](https://github.com/cloudon-one/aws-cleaner/blob/main/image_original.jpeg)
 
-    subgraph "Security & Certificates"
-        CERT[Cert Manager]
-        SEC[External Secrets]
-        style CERT fill:#f9f,stroke:#333
-        style SEC fill:#f9f,stroke:#333
-    end
+### GCP Resource Recommender
+Intelligent resource optimization for GCP implementations.
+- **Repository**: [cloudon-one/gcp-finops-recommender](https://github.com/cloudon-one/gcp-finops-recommender)
+- **Overview**: [Architecture](https://github.com/cloudon-one/gcp-finops-recommender/blob/main/image_fixed_width.png)
 
-    subgraph "Observability"
-        LOKI[Loki Stack]
-        JAEGER[Jaeger]
-        KUBECOST[Kubecost]
-        style LOKI fill:#bbf,stroke:#333
-        style JAEGER fill:#bbf,stroke:#333
-        style KUBECOST fill:#bbf,stroke:#333
-    end
+## Additional Resources
 
-    subgraph "Platform Tools"
-        ARGO[ArgoCD]
-        AIRFLOW[Airflow]
-        style ARGO fill:#bfb,stroke:#333
-        style AIRFLOW fill:#bfb,stroke:#333
-    end
+### AI & Machine Learning
+- **OpenAI Applications**: [cloudon-one/genai](https://github.com/cloudon-one/genai)
+  - API implementation examples
+  - AI assistant integration
+  - Computer vision applications
 
-    %% Connections
-    EKS --> ISTIO
-    EKS --> CERT
-    ISTIO --> KONG
-    KONG --> DNS
-    CERT --> KONG
-    SEC --> ARGO
-    SEC --> AIRFLOW
-    ISTIO --> JAEGER
-    LOKI --> KUBECOST
-```
+### Security & DevOps
+- **DevSecOps Resources**: [cloudon-one/DevSecOps](https://github.com/cloudon-one/DevSecOps)
+- **Kubernetes Guide**: [cloudon-one/k8s-resources](https://github.com/cloudon-one/k8s-resources)
+- **DevOps Toolkit**: [cloudon-one/devops-toolset](https://github.com/cloudon-one/devops-toolset)
 
+### Infrastructure Templates
+- **HCP Vault**: [cloudon-one/vault](https://github.com/cloudon-one/vault)
+  - AWS and GCP deployment templates
+  - Production-ready configurations
 
-[k8s platform modules](https://github.com/cloudon-one/k8s-platform-modules)
-```mermaid
-graph TB
-    subgraph Core["Core Infrastructure"]
-        karpenter["Karpenter<br/>(Node Management)"]
-        istio["Istio<br/>(Service Mesh)"]
-    end
+### Cloud Provider Resources
+- **GCP Terraform Modules**: [cloudon-one/gcp-terraform-resources](https://github.com/cloudon-one/gcp-terraform-resources)
+- **AWS Terraform Modules**: [cloudon-one/aws-tf-modules](https://github.com/cloudon-one/aws-tf-modules)
 
-    subgraph Security["Security & Certificates"]
-        certm["Cert Manager<br/>(Certificate Management)"]
-        extsec["External Secrets<br/>(Secrets Management)"]
-    end
+## Getting Started
 
-    subgraph Ingress["Ingress & DNS"]
-        kong["Kong Gateway<br/>(API Gateway)"]
-        extdns["External DNS<br/>(DNS Management)"]
-    end
+1. Browse our repositories to find the solutions that match your needs
+2. Each repository includes detailed documentation and deployment guides
+3. For enterprise support or customization inquiries, please reach out to our team
 
-    subgraph Observability["Observability Stack"]
-        loki["Loki Stack<br/>(Logging)"]
-        jaeger["Jaeger<br/>(Tracing)"]
-        kubecost["Kubecost<br/>(Cost Management)"]
-    end
+## Contributing
 
-    subgraph DevOps["DevOps Tools"]
-        argocd["ArgoCD<br/>(GitOps)"]
-        airflow["Airflow<br/>(Workflow Management)"]
-    end
+We welcome contributions from the community. Please review our contribution guidelines in each repository before submitting pull requests.
 
-    %% Core connections
-    istio --> kong
-    istio --> jaeger
-    karpenter --> Core
+## License
 
-    %% Security connections
-    certm --> kong
-    extsec --> DevOps
-    extsec --> Observability
+All repositories are available under their respective licenses. Please check individual repositories for specific license information.
 
-    %% Ingress connections
-    kong --> extdns
-    
-    %% Observability connections
-    loki --> Observability
-    jaeger --> Observability
-    kubecost --> Observability
+---
 
-    %% DevOps connections
-    argocd --> Core
-    argocd --> Security
-    argocd --> Ingress
-    argocd --> Observability
-    airflow --> Core
-
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px
-```
-
-[AWS Multi-Account Landing Zone with Terragrunt and Terraform](https://github.com/cloudon-one/aws-terragrunt-configuration)
-![aws-terragrunt-lz](https://github.com/cloudon-one/aws-terragrunt-configuration/blob/main/aws/aws-landing-zone.png)
-
-[Multi-tenant, scalable and isolated GCP Cloud Landing Zone](https://github.com/cloudon-one/snippet)
-![gcp snippet](https://github.com/cloudon-one/snippet/blob/main/GCP%20HLD%20-%20SNIPPET-GCP.png)
-
-[AWS FinOps Idle Resources Cleaner](https://github.com/cloudon-one/aws-cleaner)
-
-![aws cleaner hld](https://github.com/cloudon-one/aws-cleaner/blob/main/image_original.jpeg)
-
-[GCP FinOps Resources Recommender](https://github.com/cloudon-one/gcp-finops-recommender)
-![gcp finops](https://github.com/cloudon-one/gcp-finops-recommender/blob/main/image_fixed_width.png)
-
-[OpenAI applications samples -  API, AI assistant and vision](https://github.com/cloudon-one/genai)
-
-[DevSecOps Best Practices and resources](https://github.com/cloudon-one/DevSecOps)
-
-[List of selected k8s resources](https://github.com/cloudon-one/k8s-resources)
-
-[Cloud DevOps Essentials](https://github.com/cloudon-one/devops-toolset) 
-
-[HCP Vault on GCP and AWS terraform template](https://github.com/cloudon-one/vault)
-
-[GCP terraform resources](https://github.com/cloudon-one/gcp-terraform-resources) 
-
-[AWS terraform resources](https://github.com/cloudon-one/aws-tf-modules) 
-
-
+_Empowering cloud excellence through enterprise-grade solutions._
