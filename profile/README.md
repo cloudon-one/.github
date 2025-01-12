@@ -1,4 +1,4 @@
-# Cloud Infrastructure Management Suite
+# CloudOn Infrastructure Management Suite
 
 A comprehensive suite of tools and configurations for managing multi-cloud infrastructure, with focus on cost optimization, security, and automation.
 
