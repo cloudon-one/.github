@@ -4,8 +4,8 @@ A comprehensive suite of tools and configurations for managing multi-cloud infra
 
 ## 📚 Repository Links
 
-- [FinOps-Guardian](https://github.com/cloudon-one/FinOps-Guardian) - Cost optimization and resource management tools
-- [SecureOps](https://github.com/cloudon-one/secureops) - Infrastructure validation and security pipeline
+- [FinOps Guardian](https://github.com/cloudon-one/FinOps-Guardian) - Cost optimization and resource management tools
+- [SecureOps Pipelines](https://github.com/cloudon-one/secureops) - Infrastructure validation and security pipeline
 - [Multi-Cloud Runway](https://github.com/cloudon-one/multi-cloud-runway) - Landing zone infrastructure for AWS and GCP
 - [KubeLaunch Essentials](https://github.com/cloudon-one/kubelaunch-essentials) - Comprehensive Kubernetes platform
 
@@ -35,7 +35,7 @@ The suite consists of four main components:
 
 ## 🏗️ Architecture Components
 
-### FinOps Tools ([FinOps-Guardian](https://github.com/cloudon-one/FinOps-Guardian))
+### FinOps Tools ([FinOps Guardian](https://github.com/cloudon-one/FinOps-Guardian))
 
 #### GCP Organization Recommender
 - Monitors GCP recommendations using Recommender API
@@ -49,7 +49,7 @@ The suite consists of four main components:
 - Email notifications via SES
 - Safety features including dry-run mode and tag-based preservation
 
-### Infrastructure Pipeline ([SecureOps](https://github.com/cloudon-one/secureops))
+### Infrastructure Pipeline ([SecureOps Pipelines](https://github.com/cloudon-one/secureops))
 
 - **Pre-Commit Phase**
   - GitGuardian secrets scanning
