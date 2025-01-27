@@ -4,10 +4,10 @@ A comprehensive suite of tools and configurations for managing multi-cloud infra
 
 ## 📚 Repository Links
 
-- [FinOps Guardian](https://github.com/cloudon-one/FinOps-Guardian) - Cost optimization and resource management tools
-- [SecureOps Pipelines](https://github.com/cloudon-one/secureops) - Infrastructure validation and security pipeline
-- [Multi-Cloud Runway](https://github.com/cloudon-one/multi-cloud-runway) - Landing zone infrastructure for AWS and GCP
-- [KubeLaunch Essentials](https://github.com/cloudon-one/kubelaunch-essentials) - Comprehensive Kubernetes platform
+- [FinOps Services](https://github.com/cloudon-one/FinOps-Guardian) - Cost optimization and resource management tools
+- [SecOps Services](https://github.com/cloudon-one/secureops) - Infrastructure validation and security pipeline
+- [Multi-Cloud](https://github.com/cloudon-one/multi-cloud-runway) - Landing zone infrastructure for AWS and GCP
+- [KubeLaunch](https://github.com/cloudon-one/kubelaunch-essentials) - Comprehensive Kubernetes platform
 
 ## 🎯 Solutions Overview
 
