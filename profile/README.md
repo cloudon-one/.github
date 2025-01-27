@@ -18,10 +18,10 @@ The suite consists of four main components:
    - AWS Resource Cleanup for unused resource management
    - Infrastructure cost tracking and analysis
 
-2. **Infrastructure Pipeline**
+2. **SecOps & Infra Pipelines**
    - Automated validation and security checks
    - Cost impact analysis
-   - Container and Kubernetes security scanning
+   - Container, IAM, RDS, Storage and more security scanning
 
 3. **Multi-Cloud Landing Zone**
    - AWS and GCP infrastructure management
@@ -35,7 +35,7 @@ The suite consists of four main components:
 
 ## 🏗️ Architecture Components
 
-### FinOps Tools ([FinOps Guardian](https://github.com/cloudon-one/FinOps-Guardian))
+### FinOps Tools
 
 #### GCP Organization Recommender
 - Monitors GCP recommendations using Recommender API
@@ -49,11 +49,11 @@ The suite consists of four main components:
 - Email notifications via SES
 - Safety features including dry-run mode and tag-based preservation
 
-### Infrastructure Pipeline ([SecureOps Pipelines](https://github.com/cloudon-one/secureops))
+### Infrastructure Pipeline
 
 - **Pre-Commit Phase**
   - GitGuardian secrets scanning
-  - Threat modeling
+  - Threat modelling
   - Code quality checks
 
 - **Validation Phase**
@@ -66,7 +66,7 @@ The suite consists of four main components:
   - Kubernetes security
   - Multi-cloud security controls
 
-### Landing Zone Structure ([Multi-Cloud Runway](https://github.com/cloudon-one/multi-cloud-runway))
+### Landing Zone Structure
 
 #### AWS Organization
 - Management OU
@@ -83,7 +83,7 @@ The suite consists of four main components:
   - Development
   - Staging
 
-### Kubernetes Platform ([KubeLaunch Essentials](https://github.com/cloudon-one/kubelaunch-essentials))
+### Kubernetes Platform
 
 - **Core Platform**
   - Certificate management
