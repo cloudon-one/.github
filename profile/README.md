@@ -1,179 +1,44 @@
-# CloudOn Infrastructure Management Suite
+# CloudOn — Open-Source Cloud Infrastructure Tools
 
-A comprehensive suite of tools and configurations for managing multi-cloud infrastructure, with focus on cost optimization, security, and automation.
+Stop wrestling your cloud. Start winning.
 
-## 📚 Repository Links
+We build free, open-source tools that cut cloud costs, harden security, and ship production infrastructure on AWS and GCP.
 
-- [FinOps](https://github.com/cloudon-one/FinOps-Guardian) - Cost optimization and resource management tools
-- [SecOps](https://github.com/cloudon-one/secureops) - Infrastructure validation and instant security checks
-- [Multi-Cloud](https://github.com/cloudon-one/multi-cloud-runway) - Landing zone infrastructure for AWS and GCP
-- [KubeLaunch](https://github.com/cloudon-one/kubelaunch-essentials) - Comprehensive Kubernetes platform
+**[cloudon-one.com](https://cloudon-one.com)** · **[Blog](https://cloudon-one.com/blog)** · **[Services](https://cloudon-one.com/services)**
 
-## 🎯 Solutions Overview
+---
 
-The suite consists of four main components:
+## Products
 
-1. **FinOps & Cost Management**
-   - GCP Organization Recommender for cost optimization
-   - AWS Resource Cleanup for unused resource management
-   - Infrastructure cost tracking and analysis
+### [FinOps Guardian](https://github.com/cloudon-one/FinOps-Guardian)
+Slash your cloud bill with automated idle resource detection across AWS & GCP. Serverless Lambda and Cloud Functions scan for waste, send Slack alerts, and clean up unused resources — with dry-run mode for safety.
 
-2. **SecOps & Infra Pipelines**
-   - Automated validation and security checks
-   - Cost impact analysis
-   - Container, IAM, RDS, Storage and more security scanning
+### [SecureOps](https://github.com/cloudon-one/git-security-scanner-public)
+Catch secrets and vulnerabilities before they hit production — on every push. A GitHub Action powered by Gitleaks, Trivy, and OSV-Scanner with PR comments, SARIF reports, and org-wide scanning.
 
-3. **Multi-Cloud Landing Zone**
-   - AWS and GCP infrastructure management
-   - Network architecture and security controls
-   - Database and Kubernetes infrastructure
+### [KubeLaunch Essentials](https://github.com/cloudon-one/kubelaunch-essentials)
+Go from zero to production Kubernetes in minutes, not months. A security-hardened EKS platform with ArgoCD, Istio, Kyverno, Falco, and Kubecost — deployed via Terragrunt.
 
-4. **Kubernetes Platform (KubeLaunch)**
-   - Complete platform infrastructure
-   - Service mesh and observability
-   - GitOps and automation tools
+### [Multi-Cloud Runway](https://github.com/cloudon-one/multi-cloud-runway)
+Deploy compliant, multi-account cloud environments in days — not months. Enterprise landing zone templates for AWS and GCP with networking, IAM, security, and compliance built in.
 
-## 🏗️ Architecture Components
+### [OpenClaw Serverless](https://github.com/cloudon-one/openclaw-serverless)
+Run isolated AI agents on GCP with zero-cost idle and one-click tenant setup. Multi-tenant Cloud Run deployment with GCSFuse persistence, Telegram/Slack webhooks, and per-tenant isolation.
 
-### FinOps Tools
+---
 
-#### GCP Organization Recommender
-- Monitors GCP recommendations using Recommender API
-- Identifies idle resources and right-sizing opportunities
-- Delivers Slack notifications for cost optimization
-- Serverless implementation using Cloud Functions
+## Tech Stack
 
-#### AWS Resource Cleanup
-- Automated cleanup of unused AWS resources
-- Multi-region support
-- Email notifications via SES
-- Safety features including dry-run mode and tag-based preservation
+All tools are built with **Terraform/Terragrunt** for infrastructure, **Python** or **Node.js** for application logic, and deploy on **AWS** and **GCP**.
 
-### Infrastructure Pipeline
+## Contributing
 
-- **Pre-Commit Phase**
-  - GitGuardian secrets scanning
-  - Threat modelling
-  - Code quality checks
+Every repo is MIT-licensed. Fork it, deploy it, customize it — no sales calls, no license keys. PRs welcome.
 
-- **Validation Phase**
-  - Terraform validation
-  - TFSec security analysis
-  - Infracost analysis
+## Get in Touch
 
-- **Security Scanning**
-  - Container security
-  - Kubernetes security
-  - Multi-cloud security controls
-
-### Landing Zone Structure
-
-#### AWS Organization
-- Management OU
-- Network Account
-- Shared-Services Account
-- Security OU
-- Production/Development OUs
-
-#### GCP Organization
-- Root
-  - Admin
-  - Shared Environment
-  - Production
-  - Development
-  - Staging
-
-### Kubernetes Platform
-
-- **Core Platform**
-  - Certificate management
-  - DNS automation
-  - Secrets management
-  - Node provisioning
-
-- **Service Mesh**
-  - Istio
-  - Kong API Gateway
-  - Jaeger tracing
-
-- **Observability**
-  - Loki stack
-  - Kubecost
-  - Custom monitoring
-
-## 🚀 Prerequisites
-
-### Required Tools
-- Terraform >= v1.5.0
-- Terragrunt >= v0.60.0
-- AWS CLI
-- GCP SDK
-- kubectl
-- Helm v3.x
-
-### Cloud Provider Setup
-```bash
-# AWS Setup
-aws configure
-
-# GCP Setup
-gcloud auth application-default login
-```
-
-## 🔑 Security & Compliance
-
-### Multi-Cloud Security Controls
-- IAM and RBAC configurations
-- Network security and encryption
-- Audit logging and monitoring
-- Compliance frameworks support
-
-### Kubernetes Security
-- Private clusters
-- Network policies
-- Service mesh encryption
-- Secrets management with Vault
-
-## 📊 Monitoring & Observability
-
-- Cost monitoring with Kubecost
-- Log aggregation using Loki
-- Distributed tracing with Jaeger
-- Infrastructure metrics and alerting
-
-## 🔧 Maintenance
-
-### Regular Tasks
-1. Component version updates
-2. Resource utilization review
-3. Cost optimization checks
-4. Security patch management
-5. Backup procedures
-
-### State Management
-```bash
-# AWS State Backup
-terragrunt state pull > backup.tfstate
-
-# GCP State
-# Managed in GCS buckets with regional distribution
-```
-
-## 📝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 🤝 Support
-
-For support:
-- Open an issue in the repository
-- Contact cloud platform teams
-- Review documentation
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Website:** [cloudon-one.com](https://cloudon-one.com)
+- **Blog:** [cloudon-one.com/blog](https://cloudon-one.com/blog)
+- **Services:** [cloudon-one.com/services](https://cloudon-one.com/services)
+- **Contact:** [cloudon-one.com/contact](https://cloudon-one.com/contact)
+- **LinkedIn:** [linkedin.com/company/cloudon-one](https://linkedin.com/company/cloudon-one)
